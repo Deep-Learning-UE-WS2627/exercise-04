@@ -2,7 +2,6 @@
 def open_read_lines(filename):
     file = open(filename, encoding="utf-8") # opens file, type:String
     file = file.readlines() # reads file, saves in variable
-   # content = ""
     return file # returns String Object
 
 def short_read(file):
@@ -28,7 +27,7 @@ def start_with_article(file):
 def contain_april(file):
     res = open_read_lines(file) # reads file
     endRes = [x for x in res if "April" in x]
-    formatRes = endRes
+    #formatRes = endRes #How to format the String to include linebreaks after each ".". A separate function maybe
     return endRes
 
 

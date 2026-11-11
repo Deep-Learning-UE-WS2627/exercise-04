@@ -9,3 +9,19 @@ for outerlist in l1:
     print(element, end=" ")
   print()
   i = i + 1
+
+  '''Padding mechanism, to change lines 8 + 9 to max length.
+  Iterate over the list until 20, try accessing the element. If NULL throw exception + fill rest with 0s'''
+def padding_mechanism(l):
+  count = 0
+  while count < 20:
+    try:
+      l.append(0)
+      count += 1
+    except IndexError:
+      l.append(0)
+      count += 1
+  print("done")
+padding_mechanism(l1)
+
+
